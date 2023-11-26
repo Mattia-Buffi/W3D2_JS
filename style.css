@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,400;1,600&family=Nunito:ital,wght@0,400;0,600;0,700;1,500;1,600;1,700&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    }
+
+/*---------------------- DEVICE --------------------------*/
+body{
+    background-color:#0B3559;
+}
+div#header_box{
+    background-image: url('assets/backgroud_new.jpg');
+    object-fit: scale-down;
+    height: 500px;
+    width:100vW;
+
+} 
+h1{
+    font-size: 5em;
+    font-family:Chalkduster;
+}
+h2#slogan {
+    font-size:2em;
+    color:#0e385C;
+    margin-top: 180px;
+    text-align: center;
+    text-shadow:#F9DACB 1px 2px;
+}
+div.top_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding:10px;
+    padding-right: 30px;
+    margin-top: 30px;
+}
+button#buttonMenu{
+    font-size: 2em;
+    font-weight: 800;
+    padding: 16px;
+    border-radius: 40px;
+    background-color:#0B3559;
+    color:#F9DACB;
+    margin-top: 20px;
+    border: none;
+}
+button#buttonMenu:hover {
+    background-color: #F9DACB;
+    color: #0B3559;
+}
+
+
+td.productCard {
+    width: 50vW;
+    height: 50vW;
+    background-color: white;
+    padding: 5px;
+}
+td.productCard:hover {
+    background-color: #F9DACB;
+}
+div.boxProduct{
+    padding-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.boxProduct a{
+    text-decoration: none;
+    font-size: 1.1em;
+    border: 1px solid #0e385C;
+    border-radius: 15px;
+    padding: 3px;
+}
+div.boxProduct a:hover{
+    background-color: #4ea9cb;
+}
+img.imageProduct {
+    height: 50%;
+    width:50%;
+    background-color: red;
+}
+.noImage{
+    display: none;
+}
+div.nameProduct{
+    color:#0B3559;
+    font-size: 1.8em;
+}
+div.descProduct{
+    color:#4ea9cb;
+    font-size: 1.2em;
+    min-height: 70px;
+    padding: 4px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+div.priceProduct{
+    color:#000000;
+    font-size: 1.8em;
+    font-style: italic;
+}
+input.userNote {
+    margin-top: 5px;
+    border-color: #4ea9cb;
+    color:#000000;
+    text-align: center;
+}
+div#footerBox {
+    border-top: solid 2px #0e385C;
+    padding: 30px 0;
+    color:#F9DACB;
+    text-align: center;
+    font-size: 1.4em;
+}
+/*--------------------- TABLET-------------------------*/
+@media (min-width:768px) {
+    
+div.top_menu {
+    background-image: url('assets/_dbc35e64-7021-4051-8489-c9b55ba06cc5.jpg');
+    object-fit: none;
+}
+
+}
