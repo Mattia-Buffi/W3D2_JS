@@ -10,6 +10,7 @@
 body{
     background-color:#0B3559;
 }
+
 div#header_box{
     background-image: url('assets/backgroud_new.jpg');
     object-fit: scale-down;
@@ -59,7 +60,7 @@ td.productCard {
     padding: 5px;
 }
 td.productCard:hover {
-    background-color: #F9DACB;
+    background:radial-gradient(circle, rgba(255,255,255,1) 70%, rgba(11,53,89,1) 100%);
 }
 div.boxProduct{
     padding-bottom: 8px;
@@ -82,7 +83,7 @@ img.imageProduct {
     width:50%;
     background-color: red;
 }
-.noImage{
+.noElement{
     display: none;
 }
 div.nameProduct{
@@ -107,24 +108,44 @@ div.priceProduct{
     font-style: italic;
 }
 input.userNote {
-    margin-top: 5px;
+    margin-top: 15px;
     border-color: #4ea9cb;
     color:#000000;
     text-align: center;
+    width: 50%;
+    height: 3em;
+}
+.far,.fa-sticky-note{
+    font-size: 2em;
+    color:#0B3559;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+div.noteBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 div#footerBox {
-    border-top: solid 2px #0e385C;
+    border-top: solid 2px #4ea9cb;
     padding: 30px 0;
     color:#F9DACB;
     text-align: center;
     font-size: 1.4em;
 }
 /*--------------------- TABLET-------------------------*/
-@media (min-width:768px) {
+@media (min-width:1220px) {
     
-div.top_menu {
-    background-image: url('assets/_dbc35e64-7021-4051-8489-c9b55ba06cc5.jpg');
-    object-fit: none;
+div#header_box {
+    background-image:url(assets/background_desktop.jpg);
+    object-fit: contain;
+    height: 500px;
+    width:100vW;
 }
+td.productCard:hover {
+    background:radial-gradient(circle, rgba(255,255,255,1) 70%, rgba(11,53,89,1) 100%);
+}
+
 
 }

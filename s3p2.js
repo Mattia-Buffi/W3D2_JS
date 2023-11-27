@@ -44,7 +44,7 @@ function aggiungiClasse(node,newClass){
 function visibilityImage(){
     let tempNode=document.querySelectorAll('img.imageProduct');
     for (let index = 0; index < tempNode.length; index++) {
-        tempNode[index].classList.toggle('noImage');   
+        tempNode[index].classList.toggle('noElement');   
     }
 }
 // ESERCIZIO 12: Scrivi una funzione per cambiare il colore del prezzo di ogni prodotto in uno differente, ogni volta che viene invocata
@@ -59,4 +59,9 @@ function changePriceColor(indice,newColor){
     } else {
         tempNode[indice].style.color=newColor;
     }
+}
+
+// Funzione che fa apparire il box per inserire una nota al prodotto
+function aggiungiNota(indice){
+    document.querySelectorAll("input.userNote")[indice].classList.toggle('noElement');
 }
